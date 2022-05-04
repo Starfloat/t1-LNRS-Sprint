@@ -14,7 +14,7 @@ resource "azurerm_network_interface_security_group_association" "wordpress_vmnic
 
 locals {
   wordpress_vmnic_ports_map = {
-    "180" : "80",
+    "100" : "80",
     "110" : "443",
     "120" : "22"
   }
@@ -32,5 +32,5 @@ resource "azurerm_network_security_rule" "wordpress_vmnic_nsg_rule_inbound" {
   source_address_prefix       = "*"
   destination_address_prefix  = "*"
   resource_group_name         = azurerm_resource_group.rg.name
-  network_security_group_name = azurerm_network_security_group.wordpress_vmnic_nsg
+  network_security_group_name = azurerm_network_security_group.wordpress_vmnic_nsg.name
 }
