@@ -13,7 +13,7 @@ resource "azurerm_network_security_group" "wordpress_subnet_nsg" {
 
 resource "azurerm_subnet_network_security_group_association" "wordpress_subnet_nsg_associate" {
   depends_on                = [azurerm_network_security_rule.wordpress_nsg_rule_inbound]
-  subnet_id                 = azurerm_subnet.appsubnet.id
+  subnet_id                 = azurerm_subnet.wordpress_subnet.id
   network_security_group_id = azurerm_network_security_group.wordpress_subnet_nsg.id
 }
 
