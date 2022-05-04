@@ -14,7 +14,7 @@ resource "azurerm_network_interface_security_group_association" "wordpress_vmnic
 
 locals {
   wordpress_vmnic_ports_map = {
-    "180" : "80",
+    "100" : "80",
     "110" : "443",
     "120" : "22"
   }
