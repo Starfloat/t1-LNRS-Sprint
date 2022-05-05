@@ -25,5 +25,5 @@ variable "team" {
 variable "storage_account_name"{
   description = "Name of storage account"
   type =  string
-  default = "wpstorageaccount697856"
+  default = "wpstorageaccount"
 }
