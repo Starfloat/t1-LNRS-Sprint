@@ -3,6 +3,7 @@ resource "azurerm_subnet" "wordpress_subnet" {
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = var.wordpress_subnet_address
+  service_endpoints = [ "Microsoft.Sql" ]
 }
 
 resource "azurerm_network_security_group" "wordpress_subnet_nsg" {
@@ -22,6 +23,7 @@ locals {
     "100" : "80",
     "110" : "443",
     "120" : "22"
+    "130" : "8080"
   }
 }
 resource "azurerm_network_security_rule" "wordpress_nsg_rule_inbound" {

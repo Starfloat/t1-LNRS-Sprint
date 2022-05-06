@@ -15,9 +15,9 @@ resource "azurerm_linux_virtual_machine" "wordpress_linuxvm" {
     storage_account_type = "Standard_LRS"
   }
   source_image_reference {
-    publisher = "RedHat"
-    offer     = "RHEL"
-    sku       = "83-gen2"
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "16.04-LTS"
     version   = "latest"
   }
   custom_data = filebase64("${path.module}/app-scripts/redhat-wordpress-vm-script.sh")
