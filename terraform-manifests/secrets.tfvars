@@ -1,0 +1,1 @@
+mysql_db_password = "MY-r4nd0m-p4ssw0rd"

@@ -21,8 +21,8 @@ locals {
   app_inbound_ports_map = {
     "100" : "80",
     "110" : "443",
-    "120" : "8080",
-    "130" : "22"
+    "120" : "22",
+    "130" : "8080"
   }
 }
 resource "azurerm_network_security_rule" "app_nsg_rule_inbound" {
