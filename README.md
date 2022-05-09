@@ -1,5 +1,31 @@
 # t1-LNRS-Sprint
-LNRS Sprint Project - 2022-05-03
+LNRS Sprint Project - 2022-05-03 -> 2022-05-09
+
+# Project Live URL
+http://40.122.191.79/wordpress/
+
+## RoadMap
+![RoadMap](/imgs/roadmap.png)
+
+## Retrospective
+![Retrospective](/imgs/restrospective.png)
+
+## Project Owner/Scrum Master
+- Tuesday
+    - Scrum Master: Gabriel
+    - Product Owner: Sunni
+- Wednesday
+    - Scrum Master: Charlie
+    - Product Owner: James
+- Thursday
+    - Scrum Master: Sunni
+    - Product Owner: Gabriel
+- Friday
+    - Product Owner: Mohammad
+    - Scrum Master: James
+- Monday
+    - Product Owner: Charlie
+    - Scrum Master: Mohammad
 
 # Project Requirements
 1. WordPress Site deployed on an Azure Virtual Machine.
