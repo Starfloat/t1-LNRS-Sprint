@@ -3,7 +3,7 @@ resource "azurerm_linux_virtual_machine" "wordpress_linuxvm" {
   computer_name         = "wordpress-linux-vm"
   resource_group_name   = azurerm_resource_group.rg.name
   location              = azurerm_resource_group.rg.location
-  size                  = "Standard_DS1_v2"
+  size                  = "Standard_DS1"
   admin_username        = "azureuser"
   network_interface_ids = [azurerm_network_interface.wordpress_linuxvm_nic.id]
   admin_ssh_key {
@@ -20,5 +20,4 @@ resource "azurerm_linux_virtual_machine" "wordpress_linuxvm" {
     sku       = "16.04-LTS"
     version   = "latest"
   }
-  custom_data = filebase64("${path.module}/app-scripts/redhat-wordpress-vm-script.sh")
 }
